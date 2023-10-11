@@ -25,7 +25,6 @@
                         @csrf
                         <button type="submit" class="btn btn-success">Add Company</button>
                     </form>
-                    <!-- <button class="btn btn-primary">Access Company</button> -->
                     <form action="{{ route('companyUsers.index') }}" method="GET" class=" float-start p-1">
                         @csrf
                         <button type="submit" class="btn btn-primary">Show Users</button>

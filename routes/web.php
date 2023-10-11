@@ -22,20 +22,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-// Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::post('showUserDetails',[App\Http\Controllers\UserController::class,'showUserDetails'])->name('showUserDetails');
-// Route::get('showSignUpPage','App\Http\Controllers\UserController@showSignUpPage')->name('showSignUpPage');
-// Route::get('showLoginPage','App\Http\Controllers\UserController@showLoginPage')->name('showLoginPage');
-
-
 Route::resource('companies', 'App\Http\Controllers\CompanyController');
 Route::resource('companyUsers', 'App\Http\Controllers\CompanyUserController');
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
